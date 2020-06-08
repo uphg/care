@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/ChenNing02/care/issues"
   },
-  "homepage": "https://github.com/ChenNing02/care#readme"
+  "homepage": "https://github.com/ChenNing02/care#readme",
+  "dependencies": {
+    "vue": "^2.6.11"
+  }
 }
