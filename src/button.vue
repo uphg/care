@@ -1,6 +1,7 @@
 <template>
     <button class="c-button" :class="{[`icon-${iconPosition}`]: true}">
         <c-icon v-if="icon" class="icon" :name="icon"></c-icon>
+        <c-icon class="loading" name="loading"></c-icon>
         <span class="content">
             <slot></slot>
         </span>
@@ -22,6 +23,10 @@
     }
 </script>
 <style lang="scss">
+    @keyframes spin {
+        0% { transform: rotate(0deg) }
+        100% { transform: rotate(360deg) }
+    }
     .c-button {
         font-size: var(--font-size);
         height: var(--button-height);
@@ -47,6 +52,11 @@
         &.icon-right {
             > .icon { order: 2; margin-right: 0; margin-left: .3em; }
             > .content { order: 1; }
+        }
+        .loading {
+            margin-right: .3em;
+            // infinite: 一直转，linear: 线性动画
+            animation: spin 1.2s infinite linear;
         }
     }
 </style>
