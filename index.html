@@ -31,9 +31,10 @@
 </head>
 <body>
     <div id="app">
-        <c-button>我是按钮</c-button>
-        <c-button icon="settings">我是按钮</c-button>
-        <c-button icon="settings" icon-position="right">
+        <c-button :loading="loading1" @click="loading1 = !loading1">我是按钮</c-button>
+        <c-button :loading="true">我是按钮</c-button>
+        <c-button :loading="loading2" @click="loading2 = !loading2" icon="settings">我是按钮</c-button>
+        <c-button :loading="loading3" @click="loading3 = !loading3" icon="settings" icon-position="right">
             我是按钮
         </c-button>
         <c-icon class="icon" name="download"></c-icon>

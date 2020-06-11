@@ -1,7 +1,8 @@
 <template>
-    <button class="c-button" :class="{[`icon-${iconPosition}`]: true}">
-        <c-icon v-if="icon" class="icon" :name="icon"></c-icon>
-        <c-icon class="loading" name="loading"></c-icon>
+    <button class="c-button" :class="{[`icon-${iconPosition}`]: true}"
+        @click="$emit('click')"> <!-- 按钮被点击就触发一个事件，事件名称叫click -->
+        <c-icon v-if="icon && !loading" class="icon" :name="icon"></c-icon>
+        <c-icon v-if="loading" class="loading icon" name="loading"></c-icon>
         <span class="content">
             <slot></slot>
         </span>
@@ -11,6 +12,10 @@
     export default {
         props: {
             icon: {},
+            loading: {
+                type: Boolean,
+                default: false
+            },
             iconPosition: {
                 type: String, // 类型
                 default: 'left', // 默认值
