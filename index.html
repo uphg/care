@@ -20,16 +20,27 @@
             padding: 20px;
         }
     </style>
-    <style>
-
+    <style type="text/css">
+        .icon {
+           width: 1em; height: 1em;
+           vertical-align: -0.15em;
+           fill: currentColor;
+           overflow: hidden;
+        }
     </style>
 </head>
 <body>
     <div id="app">
-        <c-button></c-button>
+        <c-button>我是按钮</c-button>
+        <c-button icon="settings">我是按钮</c-button>
+        <c-button icon="settings" icon-position="right">
+            我是按钮
+        </c-button>
+        <c-button icon="settings" icon-position="xxx">
+            我是按钮
+        </c-button>
     </div>
-    <!-- <script src="./node_modules/vue/dist/vue.min.js"></script>
-    <script src="./button.js"></script> -->
     <script src="./src/app.js"></script>
+    <script src="//at.alicdn.com/t/font_1878919_08tana8t21in.js"></script>
 </body>
 </html>
