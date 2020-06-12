@@ -37,27 +37,32 @@
 </head>
 <body>
     <div id="app">
-        <div class="row">
-            <p>普通按钮</p>
-            <c-button>我是按钮</c-button>
-            <c-button icon="settings">我是按钮</c-button>
-            <c-button icon="settings" icon-position="right">
+        <div>
+            <div class="row">
+                <p>普通按钮</p>
+                <c-button>我是按钮</c-button>
+                <c-button icon="settings">我是按钮</c-button>
+                <c-button icon="settings" icon-position="right">我是按钮</c-button>
+            </div>
+            <div class="row">
+                <p>带loading的按钮</p>
+                <c-button :loading="true">我是按钮</c-button>
+                <c-button :loading="loading1" @click="loading1 = !loading1">我是按钮</c-button>
+                <c-button :loading="loading2" @click="loading2 = !loading2" icon="settings">我是按钮</c-button>
+                <c-button :loading="loading3" @click="loading3 = !loading3" icon="settings" icon-position="right">我是按钮</c-button>
+            </div>
+            <div class="row">
+                <p>连级按钮</p>
+                <c-button-group>
+                    <c-button icon="left">我是按钮</c-button>
+                    <c-button>我在中间</c-button>
+                    <c-button icon="right" icon-position="right">我是按钮</c-button>
+                </c-button-group>
+            </div>
         </div>
         <div class="row">
-            <p>带loading的按钮</p>
-            <c-button :loading="true">我是按钮</c-button>
-            <c-button :loading="loading1" @click="loading1 = !loading1">我是按钮</c-button>
-            <c-button :loading="loading2" @click="loading2 = !loading2" icon="settings">我是按钮</c-button>
-            <c-button :loading="loading3" @click="loading3 = !loading3" icon="settings" icon-position="right">我是按钮</c-button>
-        </div>
-        <div class="row">
-            <p>连级按钮</p>
-            <c-button-group>
-                <div></div>
-                <c-button icon="left">我是按钮</c-button>
-                <c-button>我在中间</c-button>
-                <c-button icon="right" icon-position="right">我是按钮</c-button>
-            </c-button-group>
+            <p>单元测试</p>
+            <div id="test"></div>
         </div>
     </div>
     <script src="./src/app.js"></script>
