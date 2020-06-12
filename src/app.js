@@ -19,6 +19,9 @@ new Vue({
 
 /* 引入chai */
 import chai from 'chai'
+import spies from 'chai-spies'
+chai.use(spies)
+
 const expect = chai.expect
 
 /* 单元测试 */
@@ -160,9 +163,12 @@ const expect = chai.expect
         }
     })
     vm.$mount()
-    vm.$on('click', function(){
-        console.log(111)
-    })
+    // 使用chai.spy伪装一个匿名函数
+    let spy = chai.spy(function(){})
+    // 如果vm的onclick事件触发了，我们就执行spy(间谍函数)
+    vm.$on('click', spy)
     let button = vm.$el
     button.click()
+    // 我期待(断言)我们的间谍(spy)被调用
+    expect(spy).to.have.been.called()
 }
