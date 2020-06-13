@@ -9,7 +9,11 @@
     </button>
 </template>
 <script>
+    import Icon from './icon'
     export default {
+        components: {
+            'c-icon': Icon
+        },
         props: {
             icon: {},
             loading: {
