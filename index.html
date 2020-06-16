@@ -22,6 +22,9 @@
         .row {
             padding: 0 0 10px;
         }
+        .item {
+            margin: 20px 0;
+        }
         p {
             padding-bottom: 5px;
         }
@@ -37,7 +40,29 @@
 </head>
 <body>
     <div id="app">
-        <div>
+        <div class="item">
+            <div class="row">
+                <c-input v-model="message"></c-input>
+                <p>{{message}}</p>
+            </div>
+            <div class="row">
+                <c-input readonly></c-input>
+            </div>
+            <div class="row">
+                <c-input disabled></c-input>
+            </div>
+            <div class="row">
+                <c-input v-model="message" error="xxx" success="???"></c-input>
+                <p>{{message}}</p>
+            </div>
+            <div class="row">
+                <c-input readonly success="???"></c-input>
+            </div>
+            <div class="row">
+                <c-input disabled success="???"></c-input>
+            </div>
+        </div>
+        <div class="item">
             <div class="row">
                 <p>普通按钮</p>
                 <c-button>我是按钮</c-button>
@@ -59,10 +84,6 @@
                     <c-button icon="right" icon-position="right">我是按钮</c-button>
                 </c-button-group>
             </div>
-        </div>
-        <div class="row">
-            <p>单元测试</p>
-            <div id="test"></div>
         </div>
     </div>
     <script src="./src/app.js"></script>

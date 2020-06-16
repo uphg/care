@@ -5,6 +5,7 @@
 </template>
 <script>
     export default {
+        name: 'CareButtonGroup',
         mounted(){
             for(let node of this.$el.children){
                 let name = node.nodeName.toLowerCase()
@@ -15,7 +16,7 @@
         }
     }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
     .c-button-group {
         display: inline-flex;
         vertical-align: middle;

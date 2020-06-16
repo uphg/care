@@ -2,17 +2,20 @@ import Vue from 'vue'
 import Button from './button'
 import Icon from './icon'
 import ButtonGroup from './button-group'
+import Input from './input'
 
 Vue.component('c-button', Button)
 Vue.component('c-icon', Icon)
 Vue.component('c-button-group', ButtonGroup)
+Vue.component('c-input', Input)
 
 new Vue({
     el: '#app',
     data: {
         loading1: false,
         loading2: false,
-        loading3: false
+        loading3: false,
+        message: 'hi'
     }
 })
 

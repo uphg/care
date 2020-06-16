@@ -29,7 +29,7 @@
         --border-radius: 4px;
         --color: blue;
         --border-color: #999;
-        --border-color-hover: red;
+        --border-color-hover: #035aa6;
     }
     ```
 
