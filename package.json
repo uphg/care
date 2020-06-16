@@ -1,6 +1,6 @@
 {
   "name": "care-ui",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "这是一个基于Vue的UI框架",
   "main": "dist/index.js",
   "scripts": {
