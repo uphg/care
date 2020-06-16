@@ -1,6 +1,7 @@
 <template>
+    <!-- $emit('click') 表示按钮被点击就触发一个事件，事件名称叫click -->
     <button class="c-button" :class="{[`icon-${iconPosition}`]: true}"
-        @click="$emit('click')"> <!-- 按钮被点击就触发一个事件，事件名称叫click -->
+        @click="$emit('click')"> 
         <c-icon v-if="icon && !loading" class="icon" :name="icon"></c-icon>
         <c-icon v-if="loading" class="loading icon" name="loading"></c-icon>
         <span class="content">
