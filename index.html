@@ -28,6 +28,17 @@
         p {
             padding-bottom: 5px;
         }
+        .demo-li {
+            min-height: 30px;
+            background-color: #eee;
+            border-radius: 3px;
+        }
+        .col:nth-child(2n) .demo-li{
+            background-color: #d3dce6;
+        }
+        .item:nth-child(1) {
+            max-width: 700px;
+        }
     </style>
     <style type="text/css">
         .icon {
@@ -41,6 +52,106 @@
 <body>
     <div id="app">
         <div class="item">
+            <section>
+                <p>栅格布局</p>
+                <c-row>
+                    <c-col span="12"><div class="demo-li"></div></c-col>
+                    <c-col span="12"><div class="demo-li"></div></c-col>
+                </c-row>
+                <c-row>
+                    <c-col span="8"><div class="demo-li"></div></c-col>
+                    <c-col span="8"><div class="demo-li"></div></c-col>
+                    <c-col span="8"><div class="demo-li"></div></c-col>
+                </c-row>
+                <c-row>
+                    <c-col span="6"><div class="demo-li"></div></c-col>
+                    <c-col span="6"><div class="demo-li"></div></c-col>
+                    <c-col span="6"><div class="demo-li"></div></c-col>
+                    <c-col span="6"><div class="demo-li"></div></c-col>
+                </c-row>
+                <c-row>
+                    <c-col span="4"><div class="demo-li"></div></c-col>
+                    <c-col span="4"><div class="demo-li"></div></c-col>
+                    <c-col span="4"><div class="demo-li"></div></c-col>
+                    <c-col span="4"><div class="demo-li"></div></c-col>
+                    <c-col span="4"><div class="demo-li"></div></c-col>
+                    <c-col span="4"><div class="demo-li"></div></c-col>
+                </c-row>
+            </section>
+            <section>
+                <p>栅格布局 - 带间隙</p>
+                <c-row gutter="10">
+                    <c-col span="12"><div class="demo-li"></div></c-col>
+                    <c-col span="12"><div class="demo-li"></div></c-col>
+                </c-row>
+                <c-row gutter="10">
+                    <c-col span="8"><div class="demo-li"></div></c-col>
+                    <c-col span="8"><div class="demo-li"></div></c-col>
+                    <c-col span="8"><div class="demo-li"></div></c-col>
+                </c-row>
+                <c-row gutter="10">
+                    <c-col span="6"><div class="demo-li"></div></c-col>
+                    <c-col span="6"><div class="demo-li"></div></c-col>
+                    <c-col span="6"><div class="demo-li"></div></c-col>
+                    <c-col span="6"><div class="demo-li"></div></c-col>
+                </c-row>
+                <c-row gutter="10">
+                    <c-col span="4"><div class="demo-li"></div></c-col>
+                    <c-col span="4"><div class="demo-li"></div></c-col>
+                    <c-col span="4"><div class="demo-li"></div></c-col>
+                    <c-col span="4"><div class="demo-li"></div></c-col>
+                    <c-col span="4"><div class="demo-li"></div></c-col>
+                    <c-col span="4"><div class="demo-li"></div></c-col>
+                </c-row>
+            </section>
+            <section>
+                <p>栅格布局 - 分栏偏移</p>
+                <c-row gutter="10">
+                    <c-col span="8"><div class="demo-li"></div></c-col>
+                    <c-col span="8" offset="8"><div class="demo-li"></div></c-col>
+                </c-row>
+                <c-row gutter="10">
+                    <c-col span="4" offset="4"><div class="demo-li"></div></c-col>
+                    <c-col span="8"><div class="demo-li"></div></c-col>
+                    <c-col span="8"><div class="demo-li"></div></c-col>
+                </c-row>
+                <c-row gutter="10">
+                    <c-col span="12"><div class="demo-li"></div></c-col>
+                    <c-col span="6" offset="6"><div class="demo-li"></div></c-col>
+                </c-row>
+            </section>
+            <section style="background-color: #f9fafc;">
+                <p>栅格布局 - flex - justify</p>
+                <p>justify = start | end | center | space-between | space-around</p>
+                <c-row gutter="10" justify="start">
+                    <c-col span="8"><div class="demo-li"></div></c-col>
+                    <c-col span="2"><div class="demo-li"></div></c-col>
+                    <c-col span="4"><div class="demo-li"></div></c-col>
+                </c-row>
+                <c-row gutter="10" justify="end">
+                    <c-col span="8"><div class="demo-li"></div></c-col>
+                    <c-col span="2"><div class="demo-li"></div></c-col>
+                    <c-col span="4"><div class="demo-li"></div></c-col>
+                </c-row>
+                <c-row gutter="10" justify="center">
+                    <c-col span="8"><div class="demo-li"></div></c-col>
+                    <c-col span="2"><div class="demo-li"></div></c-col>
+                    <c-col span="4"><div class="demo-li"></div></c-col>
+                </c-row>
+                <c-row gutter="10" justify="space-between">
+                    <c-col span="8"><div class="demo-li"></div></c-col>
+                    <c-col span="2"><div class="demo-li"></div></c-col>
+                    <c-col span="4"><div class="demo-li"></div></c-col>
+                </c-row>
+                <c-row gutter="10" justify="space-around">
+                    <c-col span="8"><div class="demo-li"></div></c-col>
+                    <c-col span="2"><div class="demo-li"></div></c-col>
+                    <c-col span="4"><div class="demo-li"></div></c-col>
+                </c-row>
+            </section>
+        </div>
+        <div class="item">
+            <p>input标签（可双向绑定）</p>
             <div class="row">
                 <c-input v-model="message"></c-input>
                 <p>{{message}}</p>
