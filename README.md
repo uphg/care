@@ -70,6 +70,7 @@
     </c-button-group>
     ```
 
+
 <!-- ## 文档
 
 ...
@@ -86,9 +87,9 @@
 
 ...
 
-## 贡献代码 -->
+## 贡献代码
 
-<!-- ## 运行
+## 运行
 
 ```sh
 npx parcel index.html
@@ -106,5 +107,4 @@ npx parcel index.html --no-cache
 
 ```sh
 npx parcel build index.js --no-cache --no-minify
-``` -->
-
+​``` -->
