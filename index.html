@@ -24,6 +24,7 @@
         }
         .item {
             margin: 20px 0;
+            max-width: 700px;
         }
         p {
             padding-bottom: 5px;
@@ -36,8 +37,20 @@
         .col:nth-child(2n) .demo-li{
             background-color: #d3dce6;
         }
-        .item:nth-child(1) {
-            max-width: 700px;
+        .header, .footer, .sider, .layout {
+            text-align: center;
+        }
+        .header, .footer {
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            background-color: #b3c0d1;
+        }
+        .sider {
+            background-color: #d3dce6;
+        }
+        .layout {
+            background-color: #e9eef3;
         }
     </style>
     <style type="text/css">
@@ -51,6 +64,23 @@
 </head>
 <body>
     <div id="app">
+        <div class="item">
+            <c-button @click="showToast">点我</c-button>
+            <c-button @click="showToast1">1点我</c-button>
+            <c-button @click="showToast2">2点我</c-button>
+            <c-button @click="showToast3">3点我</c-button>
+        </div>
+        <!-- <div class="item">
+            <p>layout布局</p>
+            <c-layout style="height: 400px;">
+                <c-sider width="200px">Sider</c-sider>
+                <c-layout>
+                    <c-header>Header</c-header>
+                    <c-content>Content</c-content>
+                    <c-footer>Footer</c-footer>
+                </c-layout>
+            </c-layout>
+        </div>
         <div class="item">
             <section>
                 <p>栅格布局</p>
@@ -195,7 +225,7 @@
                     <c-button icon="right" icon-position="right">我是按钮</c-button>
                 </c-button-group>
             </div>
-        </div>
+        </div> -->
     </div>
     <script src="./src/app.js"></script>
 </body>

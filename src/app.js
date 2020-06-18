@@ -5,6 +5,13 @@ import ButtonGroup from './button-group'
 import Input from './input'
 import Row from './row'
 import Col from './col'
+import Header from './header'
+import Content from './content'
+import Footer from './footer'
+import Layout from './layout'
+import Sider from './sider'
+import Toast from './toast'
+import plugin from './plugin'
 
 Vue.component('c-button', Button)
 Vue.component('c-icon', Icon)
@@ -12,6 +19,13 @@ Vue.component('c-button-group', ButtonGroup)
 Vue.component('c-input', Input)
 Vue.component('c-row', Row)
 Vue.component('c-col', Col)
+Vue.component('c-header', Header)
+Vue.component('c-content', Content)
+Vue.component('c-footer', Footer)
+Vue.component('c-layout', Layout)
+Vue.component('c-sider', Sider)
+
+Vue.use(plugin)
 
 new Vue({
     el: '#app',
@@ -20,6 +34,30 @@ new Vue({
         loading2: false,
         loading3: false,
         message: 'hi'
+    },
+    methods: {
+        showToast1() {
+            this.showToast('top', { autoClose: true })
+        },
+        showToast2() {
+            this.showToast('middle')
+        },
+        showToast3() {
+            this.showToast('bottom')
+        },
+        showToast(position) {
+            this.$toast(`你的智商目前为 ${parseInt(Math.random() * 100)}。你的智商需要充值！`, {
+                position,
+                enableHtml: false,
+                closeButton: {
+                    text: '已充值',
+                    callback() {
+                        console.log('他说已经充值智商了')
+                    }
+                },
+                autoClose: 3,
+            })
+        }
     }
 })
 
@@ -155,10 +193,10 @@ const expect = chai.expect
     let order = window.getComputedStyle(svg).order
     // 此处的值应该为2，因为它是放在最后的图标
     expect(order).to.eq('2')
-     // 每次断言完成后删除button元素
-     button.$el.remove()
-     // 删除button对象
-     button.$destroy()
+    // 每次断言完成后删除button元素
+    button.$el.remove()
+    // 删除button对象
+    button.$destroy()
 }
 
 /* 测试button的click事件有无问题 */
@@ -171,7 +209,7 @@ const expect = chai.expect
     })
     vm.$mount()
     // 使用chai.spy伪装一个匿名函数
-    let spy = chai.spy(function(){})
+    let spy = chai.spy(function () { })
     // 如果vm的onclick事件触发了，我们就执行spy(间谍函数)
     vm.$on('click', spy)
     let button = vm.$el
