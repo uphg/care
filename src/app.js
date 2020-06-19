@@ -1,17 +1,26 @@
 import Vue from 'vue'
-import Button from './button'
-import Icon from './icon'
-import ButtonGroup from './button-group'
-import Input from './input'
-import Row from './row'
-import Col from './col'
-import Header from './header'
-import Content from './content'
-import Footer from './footer'
-import Layout from './layout'
-import Sider from './sider'
+import Button from './button/button.vue'
+import Icon from './icon.vue'
+import ButtonGroup from './button/button-group.vue'
+import Input from './input.vue'
+
+import Row from './lattice/row.vue'
+import Col from './lattice/col.vue'
+
+import Header from './layout/header.vue'
+import Content from './layout/content.vue'
+import Footer from './layout/footer.vue'
+import Layout from './layout/layout.vue'
+import Sider from './layout/sider.vue'
+
 import Toast from './toast'
 import plugin from './plugin'
+
+import Tabs from './tabs/tabs.vue'
+import TabsNav from './tabs/tabs-nav'
+import TabsItem from './tabs/tabs-item'
+import TabsContent from './tabs/tabs-content'
+import TabsPane from './tabs/tabs-pane'
 
 Vue.component('c-button', Button)
 Vue.component('c-icon', Icon)
@@ -25,6 +34,12 @@ Vue.component('c-footer', Footer)
 Vue.component('c-layout', Layout)
 Vue.component('c-sider', Sider)
 
+Vue.component('c-tabs', Tabs)
+Vue.component('c-tabs-nav', TabsNav)
+Vue.component('c-tabs-item', TabsItem)
+Vue.component('c-tabs-content', TabsContent)
+Vue.component('c-tabs-pane', TabsPane)
+
 Vue.use(plugin)
 
 new Vue({
@@ -33,7 +48,8 @@ new Vue({
         loading1: false,
         loading2: false,
         loading3: false,
-        message: 'hi'
+        message: 'hi',
+        selectedTab: 'p2'
     },
     methods: {
         showToast1() {
@@ -57,6 +73,9 @@ new Vue({
                 },
                 autoClose: 3,
             })
+        },
+        xxx(data){
+            console.log(data)
         }
     }
 })

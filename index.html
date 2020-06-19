@@ -64,13 +64,64 @@
 </head>
 <body>
     <div id="app">
-        <div class="item">
+        <div>
+            <p>按钮样式</p>
+            <div>
+                <c-button>默认按钮</c-button>
+                <c-button icon="download">下载</c-button>
+                <c-button icon="download" icon-position="right">下载</c-button>
+                <c-button icon="Daytimemode"></c-button>
+            </div>
+            <div>
+                <c-button round>圆角按钮</c-button>
+                <c-button icon="download" round>下载</c-button>
+                <c-button icon="download" icon-position="right" round>下载</c-button>
+                <c-button icon="Daytimemode" circle></c-button>
+            </div>
+        </div>
+        <div>
+            <p>按钮状态</p>
+            <c-button loading>加载状态</c-button>
+            <c-button disabled>禁用状态</c-button>
+            <c-button loading disabled>加载状态</c-button>
+        </div>
+        
+        <div>
+            <p>按钮组</p>
+            <c-button-group>
+                <c-button icon="left">上一页</c-button>
+                <c-button icon="right" icon-position="right">下一页</c-button>
+            </c-button-group>
+            <c-button-group>
+                <c-button icon="agree"></c-button>
+                <c-button icon="favorites"></c-button>
+                <c-button icon="collection"></c-button>
+            </c-button-group>
+        </div>
+        <div class="item" style="padding: 40px;">
+            <c-tabs :selected.sync="selectedTab" @update:selected="xxx">
+                <c-tabs-nav>
+                    <c-tabs-item name="p1">选项1</c-tabs-item>
+                    <c-tabs-item name="p2">选项2</c-tabs-item>
+                    <c-tabs-item name="p3">选项3</c-tabs-item>
+                    <template slot="actions">
+                        <c-button icon="settings">xxx</c-button>
+                    </template>
+                </c-tabs-nav>
+                <c-tabs-content>
+                    <c-tabs-pane name="p1">内容1</c-tabs-pane>
+                    <c-tabs-pane name="p2">内容2</c-tabs-pane>
+                    <c-tabs-pane name="p3">内容3</c-tabs-pane>
+                </c-tabs-content>
+            </c-tabs>
+        </div>
+        <!-- <div class="item">
             <c-button @click="showToast">点我</c-button>
             <c-button @click="showToast1">1点我</c-button>
             <c-button @click="showToast2">2点我</c-button>
             <c-button @click="showToast3">3点我</c-button>
         </div>
-        <!-- <div class="item">
+        <div class="item">
             <p>layout布局</p>
             <c-layout style="height: 400px;">
                 <c-sider width="200px">Sider</c-sider>
