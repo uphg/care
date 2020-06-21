@@ -28,6 +28,7 @@ module.exports = {
                     '/use/input',
                     '/use/toast',
                     '/use/tabs',
+                    '/use/collapse',
                     '/use/lattice',
                     '/use/layout',
                     '/use/divider',

@@ -21,6 +21,26 @@
         display: inline-flex;
         vertical-align: middle;
         > .c-button {
+            &.in-button-primary {
+                border-right-color:#6699d6;
+                border-left-color:#6699d6;
+                &:first-child {
+                    border-left-color:#05b;
+                }
+                &:last-child {
+                    border-right-color:#05b;
+                }
+            }
+            &.in-button-warning {
+                border-right-color:#ffaba9;
+                border-left-color:#ffaba9;
+                &:first-child {
+                    border-left-color:#ff4d4f;
+                }
+                &:last-child {
+                    border-right-color:#ff4d4f;
+                }
+            }
             &:not(:first-child) {
                 margin-left: -1px;
             }

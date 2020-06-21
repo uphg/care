@@ -17,6 +17,16 @@ title: 'Button 按钮'
 <c-button icon="download">下载</c-button>
 <c-button icon="download" icon-position="right">下载</c-button>
 <c-button icon="Daytimemode"></c-button>
+
+<c-button type="primary">主要按钮</c-button>
+<c-button icon="download" type="primary">下载</c-button>
+<c-button icon="download" icon-position="right" type="primary">下载</c-button>
+<c-button icon="agree" type="primary"></c-button>
+
+<c-button type="warning">危险按钮</c-button>
+<c-button icon="download" type="warning">下载</c-button>
+<c-button icon="download" icon-position="right" type="warning">下载</c-button>
+<c-button icon="agree" type="warning"></c-button>
 ```
 
 ## 圆角按钮

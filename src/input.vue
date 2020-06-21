@@ -55,9 +55,9 @@ export default {
 $height: 32px;
 $border-color: #999;
 $border-color-hover: #666;
-$border-radius: 4px;
+$border-radius: 2px;
 $font-size: 12px;
-// $box-shadow-color: rgba(0, 0, 0, 0.5);
+// $box-shadow-color: hsla(214, 82%, 51%, 0.2);
 $box-shadow-color: #1a73e8;
 $error: #f1453d;
 $error-forbid: #e9c4c2;
@@ -73,21 +73,23 @@ $success-focus: hsla(100, 54%, 46%, 0.6);
         margin-right: 0.5em;
     }
     > input {
+        transition: all 0.3s;
         height: 32px;
         border: 1px solid $border-color;
-        border-radius: 4px;
+        border-radius: $border-radius;
         padding: 0 8px;
         font-size: inherit;
         &:hover {
             border-color: $border-color-hover;
         }
         &:focus {
-            // box-shadow: inset 0 1px 3px $box-shadow-color;
+            box-shadow: inset 0 1px 3px $box-shadow-color;
             border-color: $box-shadow-color;
             outline: none;
         }
         &[disabled],
         &[readonly] {
+            box-shadow: none;
             border-color: #bbb;
             color: #bbb;
             cursor: not-allowed;
@@ -97,7 +99,7 @@ $success-focus: hsla(100, 54%, 46%, 0.6);
         > input {
             border-color: $error;
             &:focus {
-                // box-shadow: inset 0 1px 3px $error-focus;
+                box-shadow: inset 0 1px 3px $error-focus;
                 outline: none;
             }
             &[disabled],
@@ -112,7 +114,7 @@ $success-focus: hsla(100, 54%, 46%, 0.6);
         > input {
             border-color: $success;
             &:focus {
-                // box-shadow: inset 0 1px 3px $success-focus;
+                box-shadow: inset 0 1px 3px $success-focus;
                 outline: none;
             }
             &[disabled],

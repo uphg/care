@@ -1,14 +1,16 @@
 <template>
     <div class="c-item">
-        <c-button-group>
-            <c-button icon="left">上一页</c-button>
-            <c-button icon="right" icon-position="right">下一页</c-button>
-        </c-button-group>
-        <c-button-group>
-            <c-button icon="agree"></c-button>
-            <c-button icon="favorites"></c-button>
-            <c-button icon="collection"></c-button>
-        </c-button-group>
+        <div class="c-item-row">
+            <c-button-group>
+                <c-button icon="left">上一页</c-button>
+                <c-button icon="right" icon-position="right">下一页</c-button>
+            </c-button-group>
+            <c-button-group>
+                <c-button icon="agree"></c-button>
+                <c-button icon="favorites"></c-button>
+                <c-button icon="collection"></c-button>
+            </c-button-group>
+        </div>
     </div>
 </template>
 <script>

@@ -1,9 +1,23 @@
 <template>
     <div class="c-item">
-        <c-button>默认按钮</c-button>
-        <c-button icon="download">下载</c-button>
-        <c-button icon="download" icon-position="right">下载</c-button>
-        <c-button icon="agree"></c-button>
+        <div class="c-item-row">
+            <c-button>默认按钮</c-button>
+            <c-button icon="download">下载</c-button>
+            <c-button icon="download" icon-position="right">下载</c-button>
+            <c-button icon="agree"></c-button>
+        </div>
+        <div class="c-item-row">
+            <c-button type="primary">主要按钮</c-button>
+            <c-button icon="download" type="primary">下载</c-button>
+            <c-button icon="download" icon-position="right" type="primary">下载</c-button>
+            <c-button icon="agree" type="primary"></c-button>
+        </div>
+        <div class="c-item-row">
+            <c-button type="warning">危险按钮</c-button>
+            <c-button icon="download" type="warning">下载</c-button>
+            <c-button icon="download" icon-position="right" type="warning">下载</c-button>
+            <c-button icon="agree" type="warning"></c-button>
+        </div>
     </div>
 </template>
 <script>

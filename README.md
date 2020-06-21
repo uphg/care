@@ -12,7 +12,7 @@
 
 使用本框架前，请在CSS中开启 border-box
 
-```html
+```css
 *, *::before, *::after { box-sizing: border-box; }
 ```
 
