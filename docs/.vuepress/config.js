@@ -1,4 +1,5 @@
 module.exports = {
+    base: '/care/',
     title: 'Hello VuePress',
     description: 'Just playing around',
     themeConfig: {
@@ -6,7 +7,7 @@ module.exports = {
         nav: [
             { text: '主页', link: '/' },
             { text: '文档', link: '/guide/install' },
-            { text: 'External', link: 'https://google.com' },
+            { text: 'GitHub', link: 'https://github.com/ChenNing02/care' },
         ],
         // 侧边导航
         sidebar: [
@@ -15,8 +16,8 @@ module.exports = {
                 collapsable: false, // 可选的, 默认值是 true, 标题的展开收起功能开关
                 // sidebarDepth: 1,    // 可选的, 默认值是 1
                 children: [
-                    '/guide/install',
-                    '/guide/use',
+                    '/guide/install'
+                    // '/guide/use',
                 ]
             },
             {
@@ -31,7 +32,6 @@ module.exports = {
                     '/use/layout',
                     '/use/divider',
                     '/use/icon',
-                    
                 ]
             }
         ]

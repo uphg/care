@@ -8,7 +8,9 @@ title: 'Button 按钮'
 
 可以添加 icon 图标，并使用 `icon-position` 属性控制图标位置
 
+<ClientOnly>
 <button-a></button-a>
+</ClientOnly>
 
 ```vue
 <c-button>默认按钮</c-button>
@@ -21,7 +23,9 @@ title: 'Button 按钮'
 
 基本功能与默认按钮相同，注意只显示icon的按钮需要添加 `circle` 属性
 
+<ClientOnly>
 <button-b></button-b>
+</ClientOnly>
 
 ```vue
 <c-button round>圆角按钮</c-button>
@@ -34,7 +38,9 @@ title: 'Button 按钮'
 
 设置 `loading` 属性为 `true` 即可，变为 loading 状态。
 
+<ClientOnly>
 <button-c></button-c>
+</ClientOnly>
 
 ```vue
 <c-button loading>加载状态</c-button>
@@ -46,7 +52,9 @@ title: 'Button 按钮'
 
 使用 `<c-button-group>` 标签来嵌套按钮，形成按钮组。
 
+<ClientOnly>
 <button-d></button-d>
+</ClientOnly>
 
 ```vue
 <c-button-group>

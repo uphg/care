@@ -1,4 +1,4 @@
-# care ui - 一个简单的 Vue UI组件
+# Care UI - 一个简单的 Vue UI组件
 
 [![Build Status](https://travis-ci.org/ChenNing02/care.svg?branch=master)](https://travis-ci.org/ChenNing02/care)
 
