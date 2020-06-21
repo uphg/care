@@ -1,4 +1,5 @@
-<h1 style="text-align: center; color: #0055bb;"><a href="https://chenning02.github.io/care/" target="_blank"></a></h1>
+
+# <a style="text-align: center; color: #0055bb; href="https://chenning02.github.io/care/" target="_blank"></a>
 
 Care 是一个简易实用的 UI 框架，基于 Vue，实现了一些常用的组件目前还在更新中，可兼容 PC / 移动端。
 
