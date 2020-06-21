@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper" :class="{error, success}">
+    <div class="c-wrapper" :class="{error, success}">
         <input
             :value="value"
             type="text"
@@ -57,14 +57,15 @@ $border-color: #999;
 $border-color-hover: #666;
 $border-radius: 4px;
 $font-size: 12px;
-$box-shadow-color: rgba(0, 0, 0, 0.5);
+// $box-shadow-color: rgba(0, 0, 0, 0.5);
+$box-shadow-color: #1a73e8;
 $error: #f1453d;
 $error-forbid: #e9c4c2;
 $error-focus: rgba(233, 69, 60, 0.6);
 $success: #62b637;
 $success-forbid: #b9f79b;
 $success-focus: hsla(100, 54%, 46%, 0.6);
-.wrapper {
+.c-wrapper {
     font-size: $font-size;
     display: inline-flex;
     align-items: center;
@@ -81,7 +82,8 @@ $success-focus: hsla(100, 54%, 46%, 0.6);
             border-color: $border-color-hover;
         }
         &:focus {
-            box-shadow: inset 0 1px 3px $box-shadow-color;
+            // box-shadow: inset 0 1px 3px $box-shadow-color;
+            border-color: $box-shadow-color;
             outline: none;
         }
         &[disabled],
@@ -95,7 +97,7 @@ $success-focus: hsla(100, 54%, 46%, 0.6);
         > input {
             border-color: $error;
             &:focus {
-                box-shadow: inset 0 1px 3px $error-focus;
+                // box-shadow: inset 0 1px 3px $error-focus;
                 outline: none;
             }
             &[disabled],
@@ -110,7 +112,7 @@ $success-focus: hsla(100, 54%, 46%, 0.6);
         > input {
             border-color: $success;
             &:focus {
-                box-shadow: inset 0 1px 3px $success-focus;
+                // box-shadow: inset 0 1px 3px $success-focus;
                 outline: none;
             }
             &[disabled],

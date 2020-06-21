@@ -1,6 +1,6 @@
 <template>
-    <div class="wrapper" :class="toastClasses">
-        <div class="toast" ref="toast">
+    <div class="c-toast-wrapper" :class="toastClasses">
+        <div class="toast" ref="toast" :class="{'in-dark':dark}">
             <div class="message">
                 <slot v-if="!enableHtml"></slot>
                 <div v-else v-html="$slots.default[0]"></div>
@@ -30,6 +30,10 @@ export default {
             }
         },
         enableHtml: {
+            type: Boolean,
+            default: false
+        },
+        dark: {
             type: Boolean,
             default: false
         },
@@ -83,7 +87,9 @@ export default {
 <style scoped lang="scss">
 $font-size: 14px;
 $toast-min-height: 40px;
-$toast-bg: rgba(0, 0, 0, 0.75);
+$toast-bg: #f1f3f4;
+$toast-border-color: #dcdfe6;
+$toast-dark-bg: rgba(0, 0, 0, 0.75);
 @keyframes slide-up {
     0% {
         opacity: 0;
@@ -112,7 +118,7 @@ $toast-bg: rgba(0, 0, 0, 0.75);
         opacity: 1;
     }
 }
-.wrapper {
+.c-toast-wrapper {
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
@@ -146,23 +152,33 @@ $toast-bg: rgba(0, 0, 0, 0.75);
     min-height: $toast-min-height;
     line-height: 1.8;
     display: flex;
-    color: white;
+    color: #303133;
     align-items: center;
     background: $toast-bg;
     border-radius: 4px;
-    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 3px 0 #dcdfe6;
     padding: 0 16px;
+    border: 1px solid $toast-border-color;
     .message {
         padding: 8px 0;
     }
     .close {
+        cursor: pointer;
         padding-left: 16px;
         flex-shrink: 0;
     }
     .line {
         height: 100%;
-        border-left: 1px solid #666;
+        border-left: 1px solid $toast-border-color;
         margin-left: 16px;
+    }
+    &.in-dark{
+        color: white;
+        background: $toast-dark-bg;
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+        .line {
+            border-color: #666;
+        }
     }
 }
 </style>

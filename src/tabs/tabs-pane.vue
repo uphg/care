@@ -35,7 +35,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .tabs-pane {
-    padding: 1em 0;
+    padding: 7px 0;
     &.active {
     }
 }

@@ -22,6 +22,11 @@ import TabsItem from './tabs/tabs-item'
 import TabsContent from './tabs/tabs-content'
 import TabsPane from './tabs/tabs-pane'
 
+import Collapse from './collapse/collapse.vue'
+import CollapseItem from './collapse/collapse-item.vue'
+
+import Divider from './divider.vue'
+
 Vue.component('c-button', Button)
 Vue.component('c-icon', Icon)
 Vue.component('c-button-group', ButtonGroup)
@@ -40,6 +45,11 @@ Vue.component('c-tabs-item', TabsItem)
 Vue.component('c-tabs-content', TabsContent)
 Vue.component('c-tabs-pane', TabsPane)
 
+Vue.component('c-collapse', Collapse)
+Vue.component('c-collapse-item', CollapseItem)
+
+Vue.component('c-divider', Divider)
+
 Vue.use(plugin)
 
 new Vue({
@@ -49,11 +59,12 @@ new Vue({
         loading2: false,
         loading3: false,
         message: 'hi',
-        selectedTab: 'p2'
+        selectedTab: 'p2',
+        autoTitle: ['1', '2']
     },
     methods: {
         showToast1() {
-            this.showToast('top', { autoClose: true })
+            this.$toast(`这是一条消息提示`, { dark: true })
         },
         showToast2() {
             this.showToast('middle')

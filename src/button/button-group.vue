@@ -21,17 +21,19 @@
         display: inline-flex;
         vertical-align: middle;
         > .c-button {
-            border-radius: 0;
-            &:not(:first-child){
+            &:not(:first-child) {
                 margin-left: -1px;
             }
+            &:not(:first-child):not(:last-child) {
+                border-radius: 0;
+            }
             &:first-child {
-                border-top-left-radius: var(--border-radius);
-                border-bottom-left-radius: var(--border-radius);
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
             }
             &:last-child {
-                border-top-right-radius: var(--border-radius);
-                border-bottom-right-radius: var(--border-radius);
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
             }
             &:hover {
                 position: relative;

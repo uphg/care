@@ -6,16 +6,6 @@
     <title>care-UI</title>
     <style lang="scss">
         *{ margin: 0; padding: 0; box-sizing: border-box; }
-        html {
-            --button-height: 32px;
-            --font-size: 14px;
-            --button-bg: white;
-            --button-active-bg: #eee;
-            --border-radius: 4px;
-            --color: #333;
-            --border-color: #999;
-            --border-color-hover: #666;
-        }
         #app {
             padding: 20px;
         }
@@ -64,60 +54,9 @@
 </head>
 <body>
     <div id="app">
-        <div>
-            <p>按钮样式</p>
-            <div>
-                <c-button>默认按钮</c-button>
-                <c-button icon="download">下载</c-button>
-                <c-button icon="download" icon-position="right">下载</c-button>
-                <c-button icon="Daytimemode"></c-button>
-            </div>
-            <div>
-                <c-button round>圆角按钮</c-button>
-                <c-button icon="download" round>下载</c-button>
-                <c-button icon="download" icon-position="right" round>下载</c-button>
-                <c-button icon="Daytimemode" circle></c-button>
-            </div>
-        </div>
-        <div>
-            <p>按钮状态</p>
-            <c-button loading>加载状态</c-button>
-            <c-button disabled>禁用状态</c-button>
-            <c-button loading disabled>加载状态</c-button>
-        </div>
-        
-        <div>
-            <p>按钮组</p>
-            <c-button-group>
-                <c-button icon="left">上一页</c-button>
-                <c-button icon="right" icon-position="right">下一页</c-button>
-            </c-button-group>
-            <c-button-group>
-                <c-button icon="agree"></c-button>
-                <c-button icon="favorites"></c-button>
-                <c-button icon="collection"></c-button>
-            </c-button-group>
-        </div>
-        <div class="item" style="padding: 40px;">
-            <c-tabs :selected.sync="selectedTab" @update:selected="xxx">
-                <c-tabs-nav>
-                    <c-tabs-item name="p1">选项1</c-tabs-item>
-                    <c-tabs-item name="p2">选项2</c-tabs-item>
-                    <c-tabs-item name="p3">选项3</c-tabs-item>
-                    <template slot="actions">
-                        <c-button icon="settings">xxx</c-button>
-                    </template>
-                </c-tabs-nav>
-                <c-tabs-content>
-                    <c-tabs-pane name="p1">内容1</c-tabs-pane>
-                    <c-tabs-pane name="p2">内容2</c-tabs-pane>
-                    <c-tabs-pane name="p3">内容3</c-tabs-pane>
-                </c-tabs-content>
-            </c-tabs>
-        </div>
-        <!-- <div class="item">
+        <div class="item">
             <c-button @click="showToast">点我</c-button>
-            <c-button @click="showToast1">1点我</c-button>
+            <c-button @click="showToast1()">showToast1点我</c-button>
             <c-button @click="showToast2">2点我</c-button>
             <c-button @click="showToast3">3点我</c-button>
         </div>
@@ -133,150 +72,8 @@
             </c-layout>
         </div>
         <div class="item">
-            <section>
-                <p>栅格布局</p>
-                <c-row>
-                    <c-col span="12"><div class="demo-li"></div></c-col>
-                    <c-col span="12"><div class="demo-li"></div></c-col>
-                </c-row>
-                <c-row>
-                    <c-col span="8"><div class="demo-li"></div></c-col>
-                    <c-col span="8"><div class="demo-li"></div></c-col>
-                    <c-col span="8"><div class="demo-li"></div></c-col>
-                </c-row>
-                <c-row>
-                    <c-col span="6"><div class="demo-li"></div></c-col>
-                    <c-col span="6"><div class="demo-li"></div></c-col>
-                    <c-col span="6"><div class="demo-li"></div></c-col>
-                    <c-col span="6"><div class="demo-li"></div></c-col>
-                </c-row>
-                <c-row>
-                    <c-col span="4"><div class="demo-li"></div></c-col>
-                    <c-col span="4"><div class="demo-li"></div></c-col>
-                    <c-col span="4"><div class="demo-li"></div></c-col>
-                    <c-col span="4"><div class="demo-li"></div></c-col>
-                    <c-col span="4"><div class="demo-li"></div></c-col>
-                    <c-col span="4"><div class="demo-li"></div></c-col>
-                </c-row>
-            </section>
-            <section>
-                <p>栅格布局 - 带间隙</p>
-                <c-row gutter="10">
-                    <c-col span="12"><div class="demo-li"></div></c-col>
-                    <c-col span="12"><div class="demo-li"></div></c-col>
-                </c-row>
-                <c-row gutter="10">
-                    <c-col span="8"><div class="demo-li"></div></c-col>
-                    <c-col span="8"><div class="demo-li"></div></c-col>
-                    <c-col span="8"><div class="demo-li"></div></c-col>
-                </c-row>
-                <c-row gutter="10">
-                    <c-col span="6"><div class="demo-li"></div></c-col>
-                    <c-col span="6"><div class="demo-li"></div></c-col>
-                    <c-col span="6"><div class="demo-li"></div></c-col>
-                    <c-col span="6"><div class="demo-li"></div></c-col>
-                </c-row>
-                <c-row gutter="10">
-                    <c-col span="4"><div class="demo-li"></div></c-col>
-                    <c-col span="4"><div class="demo-li"></div></c-col>
-                    <c-col span="4"><div class="demo-li"></div></c-col>
-                    <c-col span="4"><div class="demo-li"></div></c-col>
-                    <c-col span="4"><div class="demo-li"></div></c-col>
-                    <c-col span="4"><div class="demo-li"></div></c-col>
-                </c-row>
-            </section>
-            <section>
-                <p>栅格布局 - 分栏偏移</p>
-                <c-row gutter="10">
-                    <c-col span="8"><div class="demo-li"></div></c-col>
-                    <c-col span="8" offset="8"><div class="demo-li"></div></c-col>
-                </c-row>
-                <c-row gutter="10">
-                    <c-col span="4" offset="4"><div class="demo-li"></div></c-col>
-                    <c-col span="8"><div class="demo-li"></div></c-col>
-                    <c-col span="8"><div class="demo-li"></div></c-col>
-                </c-row>
-                <c-row gutter="10">
-                    <c-col span="12"><div class="demo-li"></div></c-col>
-                    <c-col span="6" offset="6"><div class="demo-li"></div></c-col>
-                </c-row>
-            </section>
-            <section style="background-color: #f9fafc;">
-                <p>栅格布局 - flex - justify</p>
-                <p>justify = start | end | center | space-between | space-around</p>
-                <c-row gutter="10" justify="start">
-                    <c-col span="8"><div class="demo-li"></div></c-col>
-                    <c-col span="2"><div class="demo-li"></div></c-col>
-                    <c-col span="4"><div class="demo-li"></div></c-col>
-                </c-row>
-                <c-row gutter="10" justify="end">
-                    <c-col span="8"><div class="demo-li"></div></c-col>
-                    <c-col span="2"><div class="demo-li"></div></c-col>
-                    <c-col span="4"><div class="demo-li"></div></c-col>
-                </c-row>
-                <c-row gutter="10" justify="center">
-                    <c-col span="8"><div class="demo-li"></div></c-col>
-                    <c-col span="2"><div class="demo-li"></div></c-col>
-                    <c-col span="4"><div class="demo-li"></div></c-col>
-                </c-row>
-                <c-row gutter="10" justify="space-between">
-                    <c-col span="8"><div class="demo-li"></div></c-col>
-                    <c-col span="2"><div class="demo-li"></div></c-col>
-                    <c-col span="4"><div class="demo-li"></div></c-col>
-                </c-row>
-                <c-row gutter="10" justify="space-around">
-                    <c-col span="8"><div class="demo-li"></div></c-col>
-                    <c-col span="2"><div class="demo-li"></div></c-col>
-                    <c-col span="4"><div class="demo-li"></div></c-col>
-                </c-row>
-            </section>
+            
         </div>
-        <div class="item">
-            <p>input标签（可双向绑定）</p>
-            <div class="row">
-                <c-input v-model="message"></c-input>
-                <p>{{message}}</p>
-            </div>
-            <div class="row">
-                <c-input readonly></c-input>
-            </div>
-            <div class="row">
-                <c-input disabled></c-input>
-            </div>
-            <div class="row">
-                <c-input v-model="message" error="xxx" success="???"></c-input>
-                <p>{{message}}</p>
-            </div>
-            <div class="row">
-                <c-input readonly success="???"></c-input>
-            </div>
-            <div class="row">
-                <c-input disabled success="???"></c-input>
-            </div>
-        </div>
-        <div class="item">
-            <div class="row">
-                <p>普通按钮</p>
-                <c-button>我是按钮</c-button>
-                <c-button icon="settings">我是按钮</c-button>
-                <c-button icon="settings" icon-position="right">我是按钮</c-button>
-            </div>
-            <div class="row">
-                <p>带loading的按钮</p>
-                <c-button :loading="true">我是按钮</c-button>
-                <c-button :loading="loading1" @click="loading1 = !loading1">我是按钮</c-button>
-                <c-button :loading="loading2" @click="loading2 = !loading2" icon="settings">我是按钮</c-button>
-                <c-button :loading="loading3" @click="loading3 = !loading3" icon="settings" icon-position="right">我是按钮</c-button>
-            </div>
-            <div class="row">
-                <p>连级按钮</p>
-                <c-button-group>
-                    <c-button icon="left">我是按钮</c-button>
-                    <c-button>我在中间</c-button>
-                    <c-button icon="right" icon-position="right">我是按钮</c-button>
-                </c-button-group>
-            </div>
-        </div> -->
     </div>
     <script src="./src/app.js"></script>
 </body>

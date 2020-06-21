@@ -51,7 +51,7 @@ $blue: #1a73e8;
 $disabled-text-color: grey;
 .tabs-item {
     flex-shrink: 0;
-    padding: 0 1em;
+    margin-right: 1em;
     cursor: pointer;
     height: 100%;
     display: flex;

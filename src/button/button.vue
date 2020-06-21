@@ -2,8 +2,8 @@
     <!-- $emit('click') 表示按钮被点击就触发一个事件，事件名称叫click -->
     <button class="c-button" :class="[{[`icon-${iconPosition}`]: true, 'in-circle': circle, 'in-disabled': disabled, 'in-round': round}]"
         @click="$emit('click')"> 
-        <c-icon v-if="icon && !loading" class="icon" :name="icon"></c-icon>
-        <c-icon v-if="loading" class="loading icon" name="loading"></c-icon>
+        <c-icon v-if="icon && !loading" class="icon" :name="icon" :class="{[`${rmIconMargin}`]: true}"></c-icon>
+        <c-icon v-if="loading" class="loading icon" name="loading" :class="{[`${rmIconMargin}`]: true}"></c-icon>
         <span class="content">
             <slot></slot>
         </span>
@@ -43,9 +43,21 @@
                 }
             }
         },
+        data() {
+            return {
+                iconClass: false
+            }
+        },
+        computed: {
+            rmIconMargin(){
+                if(!this.$slots.default||this.$slots.default.length<=0){
+                    return 'rm-margin'
+                }
+            }
+        },
         mounted(){
             this.$nextTick(()=>{
-                if(!this.$el.children[1].innerHTML) {
+                if(this.$el.children[1]&&this.$el.children[1].innerHTML&&!this.$el.children[1].innerHTML) {
                     this.$el.children[0].classList.add('rm-margin')
                 }
             })
@@ -113,13 +125,18 @@
             padding: 15px 8px;
         }
         &.in-disabled {
-            cursor: not-allowed;
+            // cursor: not-allowed;
+            cursor: default;
+            user-select: none;
             color: $border-color;
             &:hover {
                 background-color: $button-bg;
             }
             &:active {
                 border-color: $border-color;
+            }
+            .icon {
+                fill: $border-color;
             }
         }
         &.in-round {
