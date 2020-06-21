@@ -154,6 +154,7 @@
                 user-select: none;
                 color: #f1f3f4;
                 background-color: #3377c9;
+                border-color: #3377c9;
                 &:hover, &:focus {
                     background-color: #3377c9;
                 }
@@ -186,6 +187,7 @@
                 user-select: none;
                 color: #f1f3f4;
                 background-color: #ff7875;
+                border-color: #ff7875;
                 &:hover, &:focus {
                     background-color: #ff7875;
                 }

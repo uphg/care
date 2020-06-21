@@ -1,8 +1,8 @@
 <template>
     <div class="c-item">
-        <c-button loading>加载状态</c-button>
-        <c-button disabled>禁用状态</c-button>
-        <c-button loading disabled>加载状态</c-button>
+        <c-button type="primary" loading>加载状态</c-button>
+        <c-button type="primary" disabled>禁用状态</c-button>
+        <c-button type="primary" loading disabled>加载状态</c-button>
     </div>
 </template>
 <script>

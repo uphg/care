@@ -12,7 +12,7 @@ title: 'Collapse 折叠面板'
 
 ```vue
 <template>
-    <c-collapse :selected="names">
+    <c-collapse :selected.sync="names">
         <c-collapse-item title="标题一" name="1">
             这碗大<br>
             千万别虚荣心作祟<br>
@@ -53,7 +53,7 @@ export default {
 
 ```vue
 <template>
-    <c-collapse :selected="names" accordion>
+    <c-collapse :selected.sync="names" accordion>
         <c-collapse-item title="标题一" name="1">
             这碗大<br>
             千万别虚荣心作祟<br>

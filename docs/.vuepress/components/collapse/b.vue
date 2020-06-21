@@ -1,6 +1,6 @@
 <template>
     <div class="c-item">
-        <c-collapse :selected="names" accordion>
+        <c-collapse :selected.sync="names" accordion>
             <c-collapse-item title="标题一" name="1">
                 这碗大<br>
                 千万别虚荣心作祟<br>

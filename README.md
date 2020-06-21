@@ -1,4 +1,6 @@
-# Care UI - 一个简单的 Vue UI组件
+<h1 style="text-align: center; color: #0055bb;"><a href="https://chenning02.github.io/care/" target="_blank"></a></h1>
+
+Care 是一个简易而实用的 UI 框架，基于 Vue，
 
 [![Build Status](https://travis-ci.org/ChenNing02/care.svg?branch=master)](https://travis-ci.org/ChenNing02/care)
 
@@ -6,19 +8,7 @@
 
 这是我使用 Vue 造的第一个轮子，目前正在完善中，可能有很多不足地方~
 
-## 开始使用
-
-### 添加CSS文件
-
-使用本框架前，请在CSS中开启 border-box
-
-```css
-*, *::before, *::after { box-sizing: border-box; }
-```
-
-> IE 8 及以上浏览器支持此样式
-
-### 安装 care-ui
+## 安装
 
 ```sh
 npm i --save care-ui
@@ -26,7 +16,19 @@ npm i --save care-ui
 yarn add care-ui
 ```
 
-### 引入 care-ui
+## 快速开始
+
+### 添加CSS文件
+
+使用本框架前，请在 CSS 中开启 border-box
+
+```css
+*, *::before, *::after { box-sizing: border-box; }
+```
+
+> IE 8 及以上浏览器支持此样式
+
+### 引入 Care UI
 
 ```js
 import {CButton, CButtonGroup, CIcon } from 'care-ui'

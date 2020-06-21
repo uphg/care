@@ -1,9 +1,9 @@
 <template>
     <div class="c-item">
-        <c-button round>圆角按钮</c-button>
-        <c-button icon="download" round>下载</c-button>
-        <c-button icon="download" icon-position="right" round>下载</c-button>
-        <c-button icon="agree" circle></c-button>
+        <c-button type="primary" round>圆角按钮</c-button>
+        <c-button type="primary" icon="download" round>下载</c-button>
+        <c-button type="primary" icon="download" icon-position="right" round>下载</c-button>
+        <c-button type="primary" icon="agree" circle></c-button>
     </div>
 </template>
 <script>

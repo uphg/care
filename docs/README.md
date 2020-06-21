@@ -1,9 +1,9 @@
 ---
 home: true
 heroImage: /hero.png
-heroText: Care UI
+heroText: Care
 tagline: 一个基于Vue的UI框架
-actionText: 快速上手 →
+actionText: 快速上手
 actionLink: /guide/install
 # features:
 # - title: 简洁至上

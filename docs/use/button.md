@@ -38,10 +38,10 @@ title: 'Button 按钮'
 </ClientOnly>
 
 ```vue
-<c-button round>圆角按钮</c-button>
-<c-button icon="download" round>下载</c-button>
-<c-button icon="download" icon-position="right" round>下载</c-button>
-<c-button icon="Daytimemode" circle></c-button>
+<c-button type="primary" round>圆角按钮</c-button>
+<c-button type="primary" icon="download" round>下载</c-button>
+<c-button type="primary" icon="download" icon-position="right" round>下载</c-button>
+<c-button type="primary" icon="agree" circle></c-button>
 ```
 
 ## 按钮状态
@@ -53,9 +53,9 @@ title: 'Button 按钮'
 </ClientOnly>
 
 ```vue
-<c-button loading>加载状态</c-button>
-<c-button disabled>禁用状态</c-button>
-<c-button loading disabled>加载状态</c-button>
+<c-button type="primary" loading>加载状态</c-button>
+<c-button type="primary" disabled>禁用状态</c-button>
+<c-button type="primary" loading disabled>加载状态</c-button>
 ```
 
 ## 按钮组
@@ -68,13 +68,13 @@ title: 'Button 按钮'
 
 ```vue
 <c-button-group>
-    <c-button icon="left">上一页</c-button>
-    <c-button icon="right" icon-position="right">下一页</c-button>
+    <c-button type="primary" icon="left">上一页</c-button>
+    <c-button type="primary" icon="right" icon-position="right">下一页</c-button>
 </c-button-group>
 <c-button-group>
-    <c-button icon="agree"></c-button>
-    <c-button icon="favorites"></c-button>
-    <c-button icon="collection"></c-button>
+    <c-button type="primary" icon="agree"></c-button>
+    <c-button type="primary" icon="favorites"></c-button>
+    <c-button type="primary" icon="collection"></c-button>
 </c-button-group>
 ```
 

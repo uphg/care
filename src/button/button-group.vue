@@ -25,20 +25,20 @@
                 border-right-color:#6699d6;
                 border-left-color:#6699d6;
                 &:first-child {
-                    border-left-color:#05b;
+                    border-left: none;
                 }
                 &:last-child {
-                    border-right-color:#05b;
+                    border-right: none;
                 }
             }
             &.in-button-warning {
                 border-right-color:#ffaba9;
                 border-left-color:#ffaba9;
                 &:first-child {
-                    border-left-color:#ff4d4f;
+                    border-left: none;
                 }
                 &:last-child {
-                    border-right-color:#ff4d4f;
+                    border-right: none;
                 }
             }
             &:not(:first-child) {

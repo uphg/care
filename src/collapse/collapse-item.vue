@@ -1,6 +1,6 @@
 <template>
     <div class="c-collapse-item">
-        <div class="c-collapse-item-title" @click="toggle()">{{title}}</div>
+        <div class="c-collapse-item-title" @click="toggle" :data-name="name">{{title}}</div>
         <div class="c-collapse-item-content" v-if="open">
             <div class="c-collapse-item-content-box">
                 <slot></slot>
