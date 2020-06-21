@@ -1,6 +1,6 @@
 <h1 style="text-align: center; color: #0055bb;"><a href="https://chenning02.github.io/care/" target="_blank"></a></h1>
 
-Care 是一个简易而实用的 UI 框架，基于 Vue，
+Care 是一个简易实用的 UI 框架，基于 Vue，实现了一些常用的组件目前还在更新中，可兼容 PC / 移动端。
 
 [![Build Status](https://travis-ci.org/ChenNing02/care.svg?branch=master)](https://travis-ci.org/ChenNing02/care)
 
@@ -44,6 +44,17 @@ export default {
 }
 ```
 
+## 文档
+
+[官方文档](https://chenning02.github.io/care/)
+
+## 联系方式
+
+邮箱：<a href="mailto:bravchen@qq.com">bravchen@qq.com</a>
+
+## 贡献代码
+
+[Pull requests](https://github.com/ChenNing02/care/pulls)
 
 <!-- ## 文档
 
