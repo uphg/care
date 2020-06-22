@@ -1,6 +1,7 @@
 <div align="center">
 <img src="https://chenning02.github.io/care/hero.png">
-<div>
+</div>
+
 <h1 align="center"><a href="https://chenning02.github.io/care/" target="_blank">Care</a></h1>
 
 <div align="center">
