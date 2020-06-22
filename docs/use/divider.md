@@ -1,8 +1,8 @@
 ---
-title: 'divider 分割线'
+title: 'Divider 分割线'
 ---
 
-# 
+# Divider 分割线
 
 ## 基础用法
 

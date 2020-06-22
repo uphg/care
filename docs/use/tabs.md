@@ -1,5 +1,5 @@
 ---
-title: 'tabs 切换'
+title: 'Tabs 切换'
 ---
 
 # Tabs 切换

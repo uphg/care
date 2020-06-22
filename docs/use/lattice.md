@@ -1,8 +1,8 @@
 ---
-title: 'lattice 栅格'
+title: 'Lattice 栅格'
 ---
 
-# lattice 栅格
+# Lattice 栅格
 
 ## 基础布局
 

@@ -15,6 +15,8 @@ actionLink: /guide/install
 footer: MIT Licensed | Copyright © 2020-present Evan You
 ---
 
+<p align="center">提供了 Button，input，网格，layout布局，Toast提示框等常用组件，只需要添加少量的配置即可<s>食用</s>使用</p>
+
 <!-- # care ui 官网
 
 一个基于 Vue 的 ui 轻量级框架。提供了 Button，input，网格，layout布局，Toast提示框等常用组件 -->

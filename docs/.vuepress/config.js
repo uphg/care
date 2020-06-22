@@ -1,7 +1,7 @@
 module.exports = {
     base: '/care/',
-    title: 'Hello VuePress',
-    description: 'Just playing around',
+    title: 'Care',
+    description: 'Just do whatever you want',
     themeConfig: {
         // 顶部导航
         nav: [

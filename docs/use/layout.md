@@ -1,8 +1,8 @@
 ---
-title: 'layout 布局'
+title: 'Layout 布局'
 ---
 
-# layout 布局
+# Layout 布局
 
 ## 基础用法
 

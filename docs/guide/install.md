@@ -26,7 +26,7 @@ yarn add care-ui
 可按需求引入需要使用的组件
 
 ```js
-import {CButton, CButtonGroup, CIcon } from 'care-ui'
+import { CButton, CButtonGroup, CIcon } from 'care-ui'
 import 'care-ui/dist/index.css'
 export default {
     name: 'App',

@@ -1,13 +1,26 @@
+![Care](https://chenning02.github.io/care/hero.png)
 
 <h1 align="center"><a href="https://chenning02.github.io/care/" target="_blank">Care</a></h1>
 
-Care 是一个简易实用的 UI 框架，基于 Vue，实现了一些常用的组件目前还在更新中，可兼容 PC / 移动端。
+<div align="center">
+<img src="https://travis-ci.org/ChenNing02/care.svg?branch=master">
+<img src="https://img.shields.io/npm/v/care-ui.svg">
+<img src="https://img.shields.io/badge/language-JavaScript-blue.svg">
+<img src="https://img.shields.io/badge/License-MIT-yellow.svg">
+</div>
+Care 是一个简易实用的 UI 框架，基于 Vue，可兼容 PC / 移动端，目前正在持续更新中...
 
-[![Build Status](https://travis-ci.org/ChenNing02/care.svg?branch=master)](https://travis-ci.org/ChenNing02/care)
+## 现已支持
 
-## 介绍
+- [x] Button 按钮
+- [x] Input 输入框
+- [x] Toast 消息提示
+- [x] Tabs 切换
+- [x] Collapse 折叠面板
+- [x] Lattice 栅格
+- [x] Layout 布局
+- [x] Divider 分割线
 
-这是我使用 Vue 造的第一个轮子，目前正在完善中，可能有很多不足地方~
 
 ## 安装
 
@@ -32,7 +45,7 @@ yarn add care-ui
 ### 引入 Care UI
 
 ```js
-import {CButton, CButtonGroup, CIcon } from 'care-ui'
+import { CButton, CButtonGroup, CIcon } from 'care-ui'
 import 'care-ui/dist/index.css'
 export default {
     name: 'App',
@@ -94,3 +107,5 @@ npx parcel index.html --no-cache
 ```sh
 npx parcel build index.js --no-cache --no-minify
 ​``` -->
+
+```
