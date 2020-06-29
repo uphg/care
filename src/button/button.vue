@@ -80,7 +80,7 @@
     $button-bg-hover: #e6eef8;
     $button-border-hover: #b3cceb;
     $button-active-bg: #004da8;
-    $border-radius: 2px;
+    $border-radius: 4px;
     $color: #303133;
     $border-color: #c0c4cc;
     @keyframes spin {

@@ -1,6 +1,7 @@
 <template>
-    <div class="c-wrapper" :class="{error, success}">
+    <div class="c-input-wrapper" :class="{error, success}">
         <input
+            class="c-input"
             :value="value"
             type="text"
             :disabled="disabled"
@@ -55,7 +56,7 @@ export default {
 $height: 32px;
 $border-color: #999;
 $border-color-hover: #666;
-$border-radius: 2px;
+$border-radius: 4px;
 $font-size: 12px;
 // $box-shadow-color: hsla(214, 82%, 51%, 0.2);
 $box-shadow-color: #1a73e8;
@@ -65,7 +66,7 @@ $error-focus: rgba(233, 69, 60, 0.6);
 $success: #62b637;
 $success-forbid: #b9f79b;
 $success-focus: hsla(100, 54%, 46%, 0.6);
-.c-wrapper {
+.c-input-wrapper {
     font-size: $font-size;
     display: inline-flex;
     align-items: center;

@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /hero.png
+heroImage: /hero.svg
 heroText: Care
 tagline: 一个基于Vue的UI框架
 actionText: 快速上手

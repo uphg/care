@@ -21,10 +21,11 @@ export default {
 <style lang="scss" scoped>
 .c-item {
     border: 1px solid #d1d5da;
-    padding: 24px 24px;
+    padding: 24px 24px 0.1px;
     margin: 1em 0;
 }
-.c-wrapper {
-    margin-right: 1em;
+.c-input-wrapper {
+    margin-right: 2em;
+    margin-bottom: 24px;
 }
 </style>

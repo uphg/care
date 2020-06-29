@@ -28,5 +28,8 @@ export default {
     border: 1px solid #d1d5da;
     padding: 24px 24px;
     margin: 1em 0;
+    .c-button-group {
+        margin-right: 1em;
+    }
 }
 </style>

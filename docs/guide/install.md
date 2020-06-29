@@ -15,7 +15,7 @@ yarn add care-ui
 
 ## 添加CSS文件
 
-使用本框架前，请在CSS中开启 border-box
+使用本框架前，请在CSS中开启 `border-box`
 
 ```css
 *, *::before, *::after { box-sizing: border-box; }
@@ -26,14 +26,14 @@ yarn add care-ui
 可按需求引入需要使用的组件
 
 ```js
-import { CButton, CButtonGroup, CIcon } from 'care-ui'
+import { CButton, CButtonGroup, CIcon, ... } from 'care-ui'
 import 'care-ui/dist/index.css'
 export default {
     name: 'App',
     components: {
         CButton,
         CButtonGroup,
-        CIcon
+        CIcon,
         ...
     }
 }

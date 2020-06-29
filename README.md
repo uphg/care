@@ -47,14 +47,14 @@ yarn add care-ui
 ### 引入 Care UI
 
 ```js
-import { CButton, CButtonGroup, CIcon } from 'care-ui'
+import { CButton, CButtonGroup, CIcon, ... } from 'care-ui'
 import 'care-ui/dist/index.css'
 export default {
     name: 'App',
     components: {
         CButton,
         CButtonGroup,
-        CIcon
+        CIcon,
         ...
     }
 }
