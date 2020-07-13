@@ -11,5 +11,5 @@ git push origin master:master
 echo "提交至码云"
 git push origin master:gitee
 echo "提交说明文档"
-./deploy.sh
+# ./deploy.sh
 echo "- end -"
