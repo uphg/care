@@ -1,7 +1,7 @@
 if [ -z $1 ];then
-parame = "update"
+parame="update"
 else
-parame = $1
+parame=$1
 fi
 
 git add -A
