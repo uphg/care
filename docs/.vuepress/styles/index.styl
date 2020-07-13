@@ -1,7 +1,4 @@
 
-.navbar .links .search-box {
-    display none
-}
 
 // .sidebar-group-items > li > a.active {
 //     background-color #ecf5ff
@@ -20,10 +17,6 @@
 .c-toast-wrapper {
     position fixed
     z-index 99
-}
-
-.navbar {
-    box-shadow 0 2px 8px #f0f1f2
 }
 
 .c-item-row {
@@ -51,3 +44,92 @@
     color: #fff;
     outline: none;
 }
+
+.sidebar
+    // background-color #f4f5f5
+    &>.sidebar-links
+        &>li
+            &>.sidebar-group
+                &>.sidebar-heading
+                    padding-top: 0.5rem;
+                    padding-bottom: 0.5rem;  
+                &>.sidebar-group-items
+                    &>li
+                        &>a
+                            padding-top: 0.6rem;
+                            padding-bottom: 0.6rem;  
+                            padding-left 1.25rem
+                            font-weight bold
+                            color rgba(0,0,0,.45)
+                            &.active
+                                color $accentColor
+                                background-color #ebedef
+                        &>ul
+                            padding-top: 0.5rem;
+                            &>li
+                                &>a
+                                    padding-top: 0.4rem;
+                                    padding-bottom: 0.4rem;
+                                    position relative
+                                    &:before {
+                                        content: "";
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 1rem;
+                                        margin-top: -3px;
+                                        width: 6px;
+                                        height: 6px;
+                                        background-color: currentColor;
+                                        border-radius: 50%;
+                                    }
+// 消除大标题margin-top
+#app
+    .sidebar
+        &>.sidebar-links
+            &>li
+                &:not(:first-child)
+                    margin-top 0.25rem
+
+// 设置头部导航
+#app
+    .navbar
+        // box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1), 0 1px rgba(0,0,0,0.1);
+        // background: #fafafa;
+        .links
+            background-color: transparent;
+            .nav-links
+                & a.router-link-active
+                    color: $accentColor
+
+.sidebar
+    &::-webkit-scrollbar {
+        width: 8px; 
+        height: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: hsla(220, 4%, 58%, 0.3);
+        transition: background-color 0.3s;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: #bbb;
+    }
+    &::-webkit-scrollbar-track {
+        background: #ededed;
+    }
+body
+    &::-webkit-scrollbar {
+        width: 16px; 
+        height: 16px;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 2px;
+        background-color: hsla(220, 4%, 58%, 0.3);
+        transition: background-color 0.3s;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: #bbb;
+    }
+    &::-webkit-scrollbar-track {
+        background: #ededed;
+    }
