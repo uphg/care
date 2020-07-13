@@ -5,7 +5,7 @@ parame=$1
 fi
 
 git add -A
-git commit -m "&{parame}"
+git commit -m "${parame}"
 echo "提交至GitHub"
 git push origin master:master
 echo "提交至码云"
