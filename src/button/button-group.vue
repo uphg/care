@@ -17,13 +17,15 @@
     }
 </script>
 <style lang="scss" scoped>
+    $primary-line: #6699d6;
+    $warning-line: #ffaba9;
     .c-button-group {
         display: inline-flex;
         vertical-align: middle;
         > .c-button {
             &.in-button-primary {
-                border-right-color:#6699d6;
-                border-left-color:#6699d6;
+                border-right-color: $primary-line;
+                border-left-color: $primary-line;
                 &:first-child {
                     border-left: none;
                 }
@@ -32,8 +34,8 @@
                 }
             }
             &.in-button-warning {
-                border-right-color:#ffaba9;
-                border-left-color:#ffaba9;
+                border-right-color: $warning-line;
+                border-left-color: $warning-line;
                 &:first-child {
                     border-left: none;
                 }

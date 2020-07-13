@@ -15,7 +15,7 @@ actionLink: /guide/install
 footer: MIT Licensed | Copyright © 2020-present Evan You
 ---
 
-<p align="center">提供了 Button，input，网格，layout布局，Toast提示框等常用组件，只需要添加少量的配置即可<s>食用</s>使用</p>
+<p align="center">提供了 Button按钮，Input输入框，Lattice网格，Layout布局，Toast提示框等常用组件，只需要添加少量的配置即可<s>食用</s>使用</p>
 
 <!-- # care ui 官网
 

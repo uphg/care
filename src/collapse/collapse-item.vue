@@ -8,7 +8,6 @@
         </div>
     </div>
 </template>
-
 <script>
     export default {
         name: 'CareCollapseItem',
@@ -48,14 +47,12 @@
         }
     }
 </script>
-
 <style lang="scss" scoped>
 $title-padding: 12px 16px;
 $title-bgColor: #fafafa;
 $title-border-color: #dbdbdb;
 $title-radius: 4px;
 $content-padding: 16px;
-
 .c-collapse-item {
     .c-collapse-item-title {
         cursor: pointer;

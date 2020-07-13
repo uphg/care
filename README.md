@@ -10,7 +10,13 @@
 <img src="https://img.shields.io/badge/language-JavaScript-blue.svg">
 <img src="https://img.shields.io/badge/License-MIT-yellow.svg">
 </div>
+
 Care 是一个简易实用的 UI 框架，基于 Vue，可兼容 PC / 移动端，目前正在持续更新中...
+
+
+## 介绍
+
+Care 起这个名字主要是因为，它的美式发音跟我家乡方言的“看”发音很像，而UI框架主要是做视觉交互处理（它的英文原意为关心，照顾）
 
 ## 现已支持
 
@@ -22,7 +28,6 @@ Care 是一个简易实用的 UI 框架，基于 Vue，可兼容 PC / 移动端�
 - [x] Lattice 栅格
 - [x] Layout 布局
 - [x] Divider 分割线
-
 
 ## 安装
 

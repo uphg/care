@@ -1,5 +1,5 @@
 <template>
-    <!-- $emit('click') 表示按钮被点击就触发一个事件，事件名称叫click -->
+    <!-- $  ('click') 表示按钮被点击就触发一个事件，事件名称叫click -->
     <button class="c-button" :class="[{[`icon-${iconPosition}`]: true, 'in-circle': circle, 'in-disabled': disabled, 'in-round': round, [`in-button-${type}`]:type}]"
         @click="$emit('click')"> 
         <c-icon v-if="icon && !loading" class="icon" :name="icon" :class="{[`${rmIconMargin}`]: true}"></c-icon>
@@ -75,14 +75,21 @@
 <style lang="scss" scoped>
     $button-height: 32px;
     $font-size: 14px;
-    $button-hover-color: #05b;
     $button-bg: #ffffff;
     $button-bg-hover: #e6eef8;
     $button-border-hover: #b3cceb;
-    $button-active-bg: #004da8;
     $border-radius: 4px;
     $color: #303133;
     $border-color: #c0c4cc;
+    // 蓝色
+    $primary-color: #05b;
+    $primary-light-color: #3377c9;
+    $primary-dark-color: #004da8;
+
+    // 警告色
+    $warning-color: #ff4d4f;
+    $warning-light-color: #ff7875;
+    $warning-dark-color: #d9363e;
     @keyframes spin {
         0% { transform: rotate(0deg) }
         100% { transform: rotate(360deg) }
@@ -102,15 +109,15 @@
         align-items: center;
         vertical-align: middle;
         &:hover, &:focus {
-            fill: $button-hover-color;
-            color: $button-hover-color;
+            fill: $primary-color;
+            color: $primary-color;
             background-color: $button-bg-hover;
             border-color: $button-border-hover;
         }
         &:active {
-            fill: $button-active-bg;
-            color: $button-active-bg;
-            border-color: $button-active-bg;
+            fill: $primary-dark-color;
+            color: $primary-dark-color;
+            border-color: $primary-dark-color;
         }
         &:focus {
             outline: none;
@@ -136,16 +143,16 @@
         &.in-button-primary {
             fill: #fff;
             color: #fff;
-            background-color: #05b;
-            border-color: #05b;
+            background-color: $primary-color;
+            border-color: $primary-color;
             &:hover, &:focus {
-                background: #3377c9;
-                border-color: #3377c9;
+                background: $primary-light-color;
+                border-color: $primary-light-color;
                 color: #fff;
             }
             &:active {
-                background: #004da8;
-                border-color: #004da8;
+                background: $primary-dark-color;
+                border-color: $primary-dark-color;
                 color: #fff;
                 outline: none;
             }
@@ -153,13 +160,13 @@
                 cursor: default;
                 user-select: none;
                 color: #f1f3f4;
-                background-color: #3377c9;
-                border-color: #3377c9;
+                background-color: $primary-light-color;
+                border-color: $primary-light-color;
                 &:hover, &:focus {
-                    background-color: #3377c9;
+                    background-color: $primary-light-color;
                 }
                 &:active {
-                    border-color: #3377c9;
+                    border-color: $primary-light-color;
                 }
                 .icon {
                     fill: #f1f3f4;
@@ -169,16 +176,16 @@
         &.in-button-warning {
             fill: #fff;
             color: #fff;
-            background: #ff4d4f;
-            border-color: #ff4d4f;
+            background: $warning-color;
+            border-color: $warning-color;
             &:hover, &:focus {
-                background: #ff7875;
-                border-color: #ff7875;
+                background: $warning-light-color;
+                border-color: $warning-light-color;
                 color: #fff;
             }
             &:active {
-                background: #d9363e;
-                border-color: #d9363e;
+                background: $warning-dark-color;
+                border-color: $warning-dark-color;
                 color: #fff;
                 outline: none;
             }
@@ -186,13 +193,13 @@
                 cursor: default;
                 user-select: none;
                 color: #f1f3f4;
-                background-color: #ff7875;
-                border-color: #ff7875;
+                background-color: $warning-light-color;
+                border-color: $warning-light-color;
                 &:hover, &:focus {
-                    background-color: #ff7875;
+                    background-color: $warning-light-color;
                 }
                 &:active {
-                    border-color: #ff7875;
+                    border-color: $warning-light-color;
                 }
                 .icon {
                     fill: #f1f3f4;

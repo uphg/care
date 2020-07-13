@@ -21,4 +21,8 @@ title: 'Icon 图标'
 
 <icon-b></icon-b>
 
-持续更新中...
+其他方式添加图标：[Care-icon](https://chenning02.github.io/Document/reprint/care-icon/index.html)
+
+***
+
+图标库图标均来自[阿里巴巴矢量图标库](https://www.iconfont.cn)使用版权请参照官网说明
