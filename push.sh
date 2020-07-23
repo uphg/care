@@ -10,6 +10,6 @@ echo "提交至GitHub"
 git push origin master:master
 echo "提交至码云"
 git push gitee master:master
-echo "提交说明文档"
+echo "提交官方文档"
 ./deploy.sh
 echo "- end -"

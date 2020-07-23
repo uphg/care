@@ -15,7 +15,12 @@ Care 是一个简易实用的 UI 框架，基于 Vue，可兼容 PC / 移动端�
 
 ## 介绍
 
-Care 起这个名字主要是因为，它的美式发音跟我家乡方言的“看”发音很像，而UI框架主要是做视觉交互处理。
+Care 参照了Element UI、Ant Design等常见的UI框架，实现了一些常用的组件，现已发布至npmjs.com。
+
+## 官方文档
+
+- 国内（码云）：[https://lv1024.gitee.io/care](https://lv1024.gitee.io/care)
+- 国外（GitHub）：[https://lv1024.github.io/care/](https://lv1024.github.io/care/)
 
 ## 现已支持
 
