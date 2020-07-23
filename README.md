@@ -1,8 +1,8 @@
 <div align="center">
-<img src="https://chenning02.github.io/care/hero.png">
+<img src="https://uphg.github.io/care/hero.png">
 </div>
 
-<h1 align="center"><a href="https://chenning02.github.io/care/" target="_blank">Care</a></h1>
+<h1 align="center"><a href="https://uphg.github.io/care/" target="_blank">Care</a></h1>
 
 <div align="center">
 <img src="https://travis-ci.org/ChenNing02/care.svg?branch=master">
@@ -19,8 +19,8 @@ Care 参照了Element UI、Ant Design等常见的UI框架，实现了一些常�
 
 ## 官方文档
 
-- 国内（码云）：[https://lv1024.gitee.io/care](https://lv1024.gitee.io/care)
-- 国外（GitHub）：[https://lv1024.github.io/care/](https://lv1024.github.io/care/)
+- 国内（码云）：[https://uphg.gitee.io/care](https://uphg.gitee.io/care)
+- 国外（GitHub）：[https://uphg.github.io/care/](https://uphg.github.io/care/)
 
 ## 现已支持
 
