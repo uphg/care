@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ChenNing02/care.git"
+    "url": "git+https://github.com/uphg/care.git"
   },
   "keywords": [
     "vue",
@@ -20,9 +20,9 @@
   "author": "bravchen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ChenNing02/care/issues"
+    "url": "https://github.com/uphg/care/issues"
   },
-  "homepage": "https://github.com/ChenNing02/care#readme",
+  "homepage": "https://github.com/uphg/care#readme",
   "dependencies": {
     "button": "^1.1.1",
     "vue": "^2.6.11",
