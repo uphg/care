@@ -7,7 +7,7 @@ fi
 git add -A
 git commit -m "${parame}"
 echo "提交至GitHub"
-git push origin master:master
+git push github master:master
 echo "提交至码云"
 git push gitee master:master
 echo "提交官方文档"
